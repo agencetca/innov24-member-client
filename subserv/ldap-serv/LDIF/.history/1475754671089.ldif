@@ -1,0 +1,32 @@
+# create ROOT level branch
+
+dn: dc=innov24,dc=io
+dc: innov24
+o: TCA
+description: A social workspace for journalism and its ecosystem
+objectclass: organization
+objectclass: dcObject
+# create MEMBERS level branch
+
+dn: ou=members,dc=innov24,dc=io
+objectclass: organizationalunit
+ou: members
+description: innov24 members
+
+# create ROLE level branches
+
+dn: ou=journalist,ou=members,dc=innov24,dc=io
+objectclass: organizationalunit
+ou: journalist
+description: innov24 journalist
+
+dn: ou=communicator,ou=members,dc=innov24,dc=io
+objectclass: organizationalunit
+ou: communicator
+description: innov24 communicator
+
+dn: ou=leader,ou=members,dc=innov24,dc=io
+objectclass: organizationalunit
+ou: leader
+description: innov24 leader
+

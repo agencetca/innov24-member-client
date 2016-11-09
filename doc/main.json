@@ -1,0 +1,25 @@
+{
+    "fs" : {
+        "scripts" : "scripts",
+        "static" : "static",
+        "sub-servers" : "subserv"
+    },
+    "name" : "marvin",
+    "run-subservers-at-boot" : {
+        "My LDAP Server" : "ldapjs-serv"
+    },
+    "administration" : {
+        "account" : "root",
+        "password" : "j8pOjKJI6S$d"
+    },
+    "options" : {
+        "enable-static-content" : true,
+        "passport" : {
+            "use-passport" : true,
+            "passport-strategy" : [
+                "ldap-strategy"
+            ]
+        },
+        "use-client-sessions" : true
+    }
+}

@@ -1,0 +1,74 @@
+#!/bin/bash
+
+cd .. && 
+npm install && 
+
+[ ! -d scripts ] && mkdir scripts 
+[ ! -d static ] && mkdir static 
+[ ! -d subserv ] && mkdir subserv 
+
+populate="yes"
+
+#read -p "Do you want to populate your service with a basic angularJS@1.5 app? " populate
+case "${populate}" in
+    [yY]|[oO]|"yes"|"YES")
+        cp -r doc/app-example/* static/ &&
+        cd static && bower install && cd .. 
+        ;; 
+esac
+#unset populate
+
+#read -p "Do you want to populate your scripts folder with some utils? " populate
+case "${populate}" in
+    [yY]|[oO]|"yes"|"YES")
+        cp -r doc/script-examples/* scripts/ 
+        ;; 
+esac
+#unset populate
+
+#read -p "Do you want to populate your subserv folder with an in-memory LDAPJS server made for example? " populate
+case "${populate}" in
+    [yY]|[oO]|"yes"|"YES")
+
+        DOMAIN="$(JSON.sh -n < ../config.json | grep -i domain | awk '{$1=""; print $0 }' | cut -d '"' -f 2)"
+        OWNER="$(JSON.sh -n < ../config.json | grep -i owner | awk '{$1=""; print $0 }' | cut -d '"' -f 2)"
+        DESCRIPTION="$(JSON.sh -n < ../config.json | grep -i description | awk '{$1=""; print $0 }' | cut -d '"' -f 2)"
+        TLD="$(JSON.sh -n < ../config.json | grep -i tld | awk '{$1=""; print $0 }' | cut -d '"' -f 2)"
+
+        cp -r doc/sub-servers/ldap-serv subserv/ 
+
+        for f in subserv/ldap-serv/LDIF/*.ldif
+        do
+            echo "Processing $f"
+            sed -i 's/DOMAIN/'"$DOMAIN"'/' "$f"
+            sed -i 's/OWNER/'"$OWNER"'/' "$f"
+            sed -i 's/DESCRIPTION/'"$DESCRIPTION"'/' "$f"
+            sed -i 's/TLD/'"$TLD"'/' "$f"
+        done
+
+        ROLES="$(JSON.sh -n < ../config.json | grep -i 'roles'| awk -F ',' 'END { print $0 }' | awk -F '{|}' '{ print $2 }' | awk -F ',' '
+        BEGIN { FS = ":|," }
+        { 
+            for (i=1;i<=NF;i++) {
+                gsub(/"/, "", $i);
+                if(i%2) {
+                    a=toupper($i)
+                } else {
+                system("echo \""$i"->"a"\"");
+                system("sed -i \"s/"a"/"$i"/g\" ./subserv/ldap-serv/LDIF/*.ldif");
+                }
+            }
+        }')";
+
+        echo "A LDIF Transfert Has Been Done."
+
+        ;; 
+esac
+unset populate
+
+echo "Because Git sucks...."
+cd subserv/app-serv/apps/member/app/vendor && git clone https://github.com/FortAwesome/Font-Awesome.git && 
+git clone https://github.com/BlackrockDigital/startbootstrap-simple-sidebar.git 
+cd ../../ && bower install
+
+echo "done"

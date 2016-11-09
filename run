@@ -1,0 +1,4 @@
+#!/bin/bash
+
+git checkout prez &&
+cd ./system && ./setup && cd .. && node app.js

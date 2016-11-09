@@ -1,0 +1,20 @@
+<!-- HTML goes below -->
+<div id="sidebar-wrapper" class="sidebar-wrapper-left">
+            <ul class="sidebar-nav">
+	    	<button type="button" class="close" aria-label="Close" ng-click="$ctrl.close()">
+		   <span aria-hidden="true">&times;</span>
+	    	</button>
+                <li class="sidebar-brand">
+                   Tools
+		   <br>
+			   <a href="#/tools/publish">
+			      <div class="square-box" style="cursor:pointer;" ng-repeat="tool in $ctrl.tools">
+			   	<div class='square-content'>
+					<span style="padding-top:35%;">{{ tool.name }}</span>
+				</div>
+			      </div>
+			   </a>
+                </li>
+            </ul>
+        </div>
+

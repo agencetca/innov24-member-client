@@ -1,0 +1,17 @@
+# create ROLE level branches
+
+dn: cn=journalist,ou=roles,dc=innov24,dc=io
+cn: journalist
+description: innov24 role : journalist
+objectclass: groupofnames
+
+dn: cn=communicator,ou=roles,dc=innov24,dc=io
+cn: communicator
+description: innov24 role : communicator
+objectclass: groupofnames
+
+dn: cn=leader,ou=roles,dc=innov24,dc=io
+cn: leader
+description: innov24 role : leader
+objectclass: groupofnames
+

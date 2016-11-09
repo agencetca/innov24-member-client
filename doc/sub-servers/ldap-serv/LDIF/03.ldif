@@ -1,0 +1,17 @@
+# create ROLE level branches
+
+dn: cn=ROLE0,ou=roles,dc=DOMAIN,dc=TLD
+cn: ROLE0
+description: DOMAIN role : ROLE0
+objectclass: groupofnames
+
+dn: cn=ROLE1,ou=roles,dc=DOMAIN,dc=TLD
+cn: ROLE1
+description: DOMAIN role : ROLE1
+objectclass: groupofnames
+
+dn: cn=ROLE2,ou=roles,dc=DOMAIN,dc=TLD
+cn: ROLE2
+description: DOMAIN role : ROLE2
+objectclass: groupofnames
+

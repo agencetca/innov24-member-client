@@ -1,0 +1,23 @@
+{
+  "name": "member",
+  "authors": [
+    "Guillaume Pierre <guillaumeinnov24@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-payment": "*",
+    "angular-rtcomm": "^1.0.3",
+    "angular-ui-calendar": "^1.0.2",
+    "textAngular": "^1.5.10"
+  }
+}

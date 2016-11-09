@@ -1,0 +1,16 @@
+<h1>Publish
+<a class="btn btn-secondary pull-right">New</a>
+<a class="btn btn-secondary pull-right">Save</a>
+</h1>
+
+<form class="form-group">
+
+	<input class="form-control" type="text" placeholder="Title" ng-model="new.title"/>
+	<br>
+	<textarea class="form-control" placeholder="Description" ng-model="new.desc"></textarea>
+	<br>
+	<div text-angular ng-model="new.content"></div>
+	<br>
+	<input class="form-control" type="submit" ng-click="publish($event)" value="Publish" />
+
+</form>

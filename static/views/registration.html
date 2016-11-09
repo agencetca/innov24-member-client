@@ -1,0 +1,63 @@
+<form action="/register" method="post">
+
+<div class="form-group">
+    <label for="email">Email address</label>
+    <div class="input-group">
+          <span class="input-group-btn">
+              <button class="btn btn-default" type="button">Email</button>
+          </span>
+          <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+    </div>
+</div>
+
+<div class="form-group">
+    <label for="username">Username</label>
+    <div class="input-group">
+          <span class="input-group-btn">
+              <button class="btn btn-default" type="button">Username</button>
+          </span>
+          <input type="text" name="username" class="form-control" id="username" aria-describedby="usernameHelp" placeholder="Enter username">
+    </div>
+</div>
+
+<div class="form-group">
+    <label for="password">Password</label>
+    <div class="input-group">
+          <span class="input-group-btn">
+              <button class="btn btn-default" ng-click="showpassword = !showpassword" type="button">Password</button>
+          </span>
+          <input id="password" class="form-control" placeholder="Password" ng-show="showpassword" type="text" ng-model="password">
+          <input id="password" name="password" class="form-control" placeholder="Password" ng-hide="showpassword" type="password" ng-model="password">
+          <div class="input-group-btn">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
+              <ul class="dropdown-menu dropdown-menu-right">
+                  <li ng-hide="showpassword">
+                     <a ng-click="showpassword = !showpassword">Show Password</a></li>
+                  <li ng-show="showpassword">
+                      <a ng-click="showpassword = !showpassword">Hide Password</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a ng-click="password = password_generator()" >Generate Secure Password</a></li>
+              </ul>
+          </div><!-- /btn-group -->
+    </div><!-- /input-group -->
+</div>
+
+<div class="form-group">
+    <label for="role">Role</label>
+    <div class="input-group">
+          <span class="input-group-btn">
+              <button class="btn btn-default" type="button">Role</button>
+          </span>
+          <select id="role" name="role" class="form-control" required>
+              <option value="" selected disabled>Apply for a role</option>
+              <option value="role0">Journalist</option>
+              <option value="role1">Communicator</option>
+              <option value="role2">Leader</option>
+          </select>
+    </div>
+</div>
+
+<button type="submit" action="/register" method="post" class="btn btn-default pull-right">Register</button>
+
+</div>
+</form>

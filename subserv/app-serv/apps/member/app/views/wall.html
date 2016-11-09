@@ -1,0 +1,22 @@
+<!-- HTML goes below -->
+
+<div class="container">
+	<div class="row well well-sm btn-group" role="group">
+		<button class="btn btn-secondary btn-lg" style="height:50px;width:60px;font-size:20px">A</button>
+		<button class="btn btn-default btn-lg" style="height:50px;width:60px;font-size:20px">B</button>
+		<button class="btn btn-secondary btn-lg" style="height:50px;width:60px;font-size:20px">C</button>
+		<button class="btn btn-default btn-lg" style="height:50px;width:60px;font-size:20px">D</button>
+		<button class="btn btn-default btn-lg" style="height:50px;width:60px;font-size:20px">E</button>
+		<button class="btn btn-secondary btn-lg" style="height:50px;width:60px;font-size:20px">F</button>
+		<button class="btn btn-secondary btn-lg" style="height:50px;width:60px;font-size:20px">G</button>
+		<button class="btn btn-secondary btn-lg" style="height:50px;width:60px;font-size:20px">H</button>
+	</div>
+	<div class="row well well-sm">
+		<label class="checkbox-inline"><input type="checkbox" value="" style="width: 22px; height: 22px;margin-right:4px;margin-top:0px;cursor:pointer;">Option 1</label>
+		<label class="checkbox-inline"><input type="checkbox" value="">Option 2</label>
+		<label class="checkbox-inline"><input type="checkbox" value="">Option 3</label>
+	</div>
+	<div class="row">
+		<wall-item ng-repeat="item in items" title="{{item.title}}" desc="{{item.chapo}}" content="{{item.content}}" pubdate="{{item.publication_date}}"></wall-item>
+	</div>
+</div>

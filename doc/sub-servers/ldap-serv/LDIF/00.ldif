@@ -1,0 +1,8 @@
+# create ROOT level branch
+
+dn: dc=DOMAIN,dc=TLD
+dc: DOMAIN
+o: OWNER
+description: DESCRIPTION
+objectclass: organization
+objectclass: dcObject

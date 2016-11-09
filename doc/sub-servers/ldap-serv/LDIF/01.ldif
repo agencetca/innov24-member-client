@@ -1,0 +1,7 @@
+# create MEMBERS level branch
+
+dn: ou=members,dc=DOMAIN,dc=TLD
+objectclass: organizationalunit
+ou: members
+description: DOMAIN members
+

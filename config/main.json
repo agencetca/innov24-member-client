@@ -1,0 +1,30 @@
+{
+    "fs" : {
+        "scripts" : "scripts",
+        "static" : "static",
+        "sub-servers" : "subserv"
+    },
+    "name" : "marvin",
+    "run-subservers-at-boot" : {
+        "authserv" : "ldap-serv/ldapjs-serv.js",
+        "appserv" : "app-serv/app.js",
+        "newsserv" : "news-serv/server.js"
+    },
+    "administration" : {
+        "account" : "root",
+        "password" : "root"
+    },
+    "options" : {
+        "enable-static-content" : true,
+        "passport" : {
+            "use-passport" : true,
+            "passport-strategy" : [
+                "ldap-strategy"
+            ]
+        },
+        "use-client-sessions" : true
+    },
+    "custom" : {
+        "ldap-port" : "1389"
+    }
+}

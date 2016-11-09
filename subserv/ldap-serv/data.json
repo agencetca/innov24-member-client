@@ -1,0 +1,444 @@
+{
+  "dc=innov24, dc=io": {
+    "dc": [
+      "innov24"
+    ],
+    "description": [
+      "A social workspace for journalism and its ecosystem"
+    ],
+    "o": [
+      "TCA"
+    ],
+    "objectclass": [
+      "organization",
+      "dcObject"
+    ]
+  },
+  "ou=members, dc=innov24, dc=io": {
+    "description": [
+      "innov24 members"
+    ],
+    "objectclass": [
+      "organizationalunit"
+    ],
+    "ou": [
+      "members"
+    ]
+  },
+  "ou=roles, dc=innov24, dc=io": {
+    "description": [
+      "innov24 roles"
+    ],
+    "objectclass": [
+      "organizationalunit"
+    ],
+    "ou": [
+      "roles"
+    ]
+  },
+  "cn=journalist, ou=roles, dc=innov24, dc=io": {
+    "cn": [
+      "journalist"
+    ],
+    "description": [
+      "innov24 role : journalist"
+    ],
+    "objectclass": [
+      "groupofnames"
+    ],
+    "member": [
+      "uid=946157f3-066f-e10f-7461-e1a22525d733, ou=members, dc=innov24, dc=io",
+      "uid=98a7c7bf-9a40-8512-5c71-96e0ec98ca6c, ou=members, dc=innov24, dc=io",
+      "uid=5970ca51-89d2-ab03-f76e-d28a446dadd6, ou=members, dc=innov24, dc=io",
+      "uid=2789daee-3394-b724-9f26-c25da216e26d, ou=members, dc=innov24, dc=io",
+      "uid=6ddae056-ed60-b9f4-35a4-f6f5cdf21153, ou=members, dc=innov24, dc=io",
+      "uid=a57d78e5-6475-19f1-d784-09b3c81d758e, ou=members, dc=innov24, dc=io",
+      "uid=5d7c7b71-2ea3-06ed-ff92-2daa715a6a1d, ou=members, dc=innov24, dc=io",
+      "cn=plop@yopmail.com, ou=members, dc=innov24, dc=io",
+      "uid=9fd890fa-7ad6-3b27-5564-b57d87901dd7, ou=members, dc=innov24, dc=io",
+      "uid=58b4e4a2-6dd6-0203-ede5-727271e7702d, ou=members, dc=innov24, dc=io"
+    ]
+  },
+  "cn=communicator, ou=roles, dc=innov24, dc=io": {
+    "cn": [
+      "communicator"
+    ],
+    "description": [
+      "innov24 role : communicator"
+    ],
+    "objectclass": [
+      "groupofnames"
+    ],
+    "member": [
+      "uid=42f12996-4da8-c6d0-2fdf-818fbd1a0886, ou=members, dc=innov24, dc=io",
+      "uid=fa332e44-ae05-7092-78a6-9b82b30fc467, ou=members, dc=innov24, dc=io",
+      "uid=7601dcda-ff24-7e7f-d78b-1fb444de14c3, ou=members, dc=innov24, dc=io",
+      "cn=p@p, ou=members, dc=innov24, dc=io",
+      "cn=vik@vik, ou=members, dc=innov24, dc=io"
+    ]
+  },
+  "cn=leader, ou=roles, dc=innov24, dc=io": {
+    "cn": [
+      "leader"
+    ],
+    "description": [
+      "innov24 role : leader"
+    ],
+    "objectclass": [
+      "groupofnames"
+    ],
+    "member": [
+      "uid=9236029f-0aa0-6fd1-4500-756c3db90d86, ou=members, dc=innov24, dc=io",
+      "uid=ba29e3d2-ae97-1076-8325-ddd738519d1e, ou=members, dc=innov24, dc=io",
+      "cn=toto@toto, ou=members, dc=innov24, dc=io"
+    ]
+  },
+  "uid=946157f3-066f-e10f-7461-e1a22525d733, ou=members, dc=innov24, dc=io": {
+    "cn": [
+      "aaa@aaa"
+    ],
+    "mail": [
+      "aaa@aaa"
+    ],
+    "objectclass": [
+      "inetOrgPerson"
+    ],
+    "sn": [
+      "toto"
+    ],
+    "uid": [
+      "946157f3-066f-e10f-7461-e1a22525d733"
+    ],
+    "userpassword": [
+      "toto"
+    ]
+  },
+  "uid=9236029f-0aa0-6fd1-4500-756c3db90d86, ou=members, dc=innov24, dc=io": {
+    "cn": [
+      "bambi@toto.com"
+    ],
+    "mail": [
+      "bambi@toto.com"
+    ],
+    "objectclass": [
+      "inetOrgPerson"
+    ],
+    "sn": [
+      "totobambi"
+    ],
+    "uid": [
+      "9236029f-0aa0-6fd1-4500-756c3db90d86"
+    ],
+    "userpassword": [
+      "totobambi"
+    ]
+  },
+  "uid=98a7c7bf-9a40-8512-5c71-96e0ec98ca6c, ou=members, dc=innov24, dc=io": {
+    "cn": [
+      "erick.haehnsen@gmail.com"
+    ],
+    "mail": [
+      "erick.haehnsen@gmail.com"
+    ],
+    "objectclass": [
+      "inetOrgPerson"
+    ],
+    "sn": [
+      "toto"
+    ],
+    "uid": [
+      "98a7c7bf-9a40-8512-5c71-96e0ec98ca6c"
+    ],
+    "userpassword": [
+      "toto"
+    ]
+  },
+  "uid=5970ca51-89d2-ab03-f76e-d28a446dadd6, ou=members, dc=innov24, dc=io": {
+    "cn": [
+      "coco@coco"
+    ],
+    "mail": [
+      "coco@coco"
+    ],
+    "objectclass": [
+      "inetOrgPerson"
+    ],
+    "sn": [
+      "coco"
+    ],
+    "uid": [
+      "5970ca51-89d2-ab03-f76e-d28a446dadd6"
+    ],
+    "userpassword": [
+      "coco"
+    ]
+  },
+  "uid=2789daee-3394-b724-9f26-c25da216e26d, ou=members, dc=innov24, dc=io": {
+    "cn": [
+      "roro@roro"
+    ],
+    "mail": [
+      "roro@roro"
+    ],
+    "objectclass": [
+      "inetOrgPerson"
+    ],
+    "sn": [
+      "roro"
+    ],
+    "uid": [
+      "2789daee-3394-b724-9f26-c25da216e26d"
+    ],
+    "userpassword": [
+      "roro"
+    ]
+  },
+  "uid=6ddae056-ed60-b9f4-35a4-f6f5cdf21153, ou=members, dc=innov24, dc=io": {
+    "cn": [
+      "ficus@ficus"
+    ],
+    "mail": [
+      "ficus@ficus"
+    ],
+    "objectclass": [
+      "inetOrgPerson"
+    ],
+    "sn": [
+      "toto"
+    ],
+    "uid": [
+      "6ddae056-ed60-b9f4-35a4-f6f5cdf21153"
+    ],
+    "userpassword": [
+      "toto"
+    ]
+  },
+  "uid=a57d78e5-6475-19f1-d784-09b3c81d758e, ou=members, dc=innov24, dc=io": {
+    "cn": [
+      "admin@admin.com"
+    ],
+    "mail": [
+      "admin@admin.com"
+    ],
+    "objectclass": [
+      "inetOrgPerson"
+    ],
+    "sn": [
+      "admin"
+    ],
+    "uid": [
+      "a57d78e5-6475-19f1-d784-09b3c81d758e"
+    ],
+    "userpassword": [
+      "admin"
+    ]
+  },
+  "uid=42f12996-4da8-c6d0-2fdf-818fbd1a0886, ou=members, dc=innov24, dc=io": {
+    "cn": [
+      "azeaze@zaeaze"
+    ],
+    "mail": [
+      "azeaze@zaeaze"
+    ],
+    "objectclass": [
+      "inetOrgPerson"
+    ],
+    "sn": [
+      "aze"
+    ],
+    "uid": [
+      "42f12996-4da8-c6d0-2fdf-818fbd1a0886"
+    ],
+    "userpassword": [
+      "aze"
+    ]
+  },
+  "uid=ba29e3d2-ae97-1076-8325-ddd738519d1e, ou=members, dc=innov24, dc=io": {
+    "cn": [
+      "qsdeqsd@qsd"
+    ],
+    "mail": [
+      "qsdeqsd@qsd"
+    ],
+    "objectclass": [
+      "inetOrgPerson"
+    ],
+    "sn": [
+      "qsd"
+    ],
+    "uid": [
+      "ba29e3d2-ae97-1076-8325-ddd738519d1e"
+    ],
+    "userpassword": [
+      "qsd"
+    ]
+  },
+  "uid=fa332e44-ae05-7092-78a6-9b82b30fc467, ou=members, dc=innov24, dc=io": {
+    "cn": [
+      "dada@dada"
+    ],
+    "mail": [
+      "dada@dada"
+    ],
+    "objectclass": [
+      "inetOrgPerson"
+    ],
+    "sn": [
+      "toto"
+    ],
+    "uid": [
+      "fa332e44-ae05-7092-78a6-9b82b30fc467"
+    ],
+    "userpassword": [
+      "toto"
+    ]
+  },
+  "uid=7601dcda-ff24-7e7f-d78b-1fb444de14c3, ou=members, dc=innov24, dc=io": {
+    "cn": [
+      "dodo@dodo"
+    ],
+    "mail": [
+      "dodo@dodo"
+    ],
+    "objectclass": [
+      "inetOrgPerson"
+    ],
+    "sn": [
+      "toto"
+    ],
+    "uid": [
+      "7601dcda-ff24-7e7f-d78b-1fb444de14c3"
+    ],
+    "userpassword": [
+      "toto"
+    ]
+  },
+  "uid=5d7c7b71-2ea3-06ed-ff92-2daa715a6a1d, ou=members, dc=innov24, dc=io": {
+    "cn": [
+      "guillaumeinnov24@gmail.com"
+    ],
+    "mail": [
+      "guillaumeinnov24@gmail.com"
+    ],
+    "objectclass": [
+      "inetOrgPerson"
+    ],
+    "sn": [
+      "guillaume"
+    ],
+    "uid": [
+      "5d7c7b71-2ea3-06ed-ff92-2daa715a6a1d"
+    ],
+    "userpassword": [
+      "guillaume"
+    ]
+  },
+  "cn=plop@yopmail.com, ou=members, dc=innov24, dc=io": {
+    "cn": [
+      "plop@yopmail.com"
+    ],
+    "mail": [
+      "plop@yopmail.com"
+    ],
+    "objectclass": [
+      "inetOrgPerson"
+    ],
+    "sn": [
+      "toto"
+    ],
+    "userpassword": [
+      "toto"
+    ]
+  },
+  "cn=p@p, ou=members, dc=innov24, dc=io": {
+    "cn": [
+      "p@p"
+    ],
+    "mail": [
+      "p@p"
+    ],
+    "objectclass": [
+      "inetOrgPerson"
+    ],
+    "sn": [
+      "toto"
+    ],
+    "userpassword": [
+      "toto"
+    ]
+  },
+  "cn=vik@vik, ou=members, dc=innov24, dc=io": {
+    "cn": [
+      "vik@vik"
+    ],
+    "mail": [
+      "vik@vik"
+    ],
+    "objectclass": [
+      "inetOrgPerson"
+    ],
+    "sn": [
+      "toto"
+    ],
+    "userpassword": [
+      "toto"
+    ]
+  },
+  "cn=toto@toto, ou=members, dc=innov24, dc=io": {
+    "cn": [
+      "toto@toto"
+    ],
+    "mail": [
+      "toto@toto"
+    ],
+    "objectclass": [
+      "inetOrgPerson"
+    ],
+    "sn": [
+      "toto"
+    ],
+    "userpassword": [
+      "toto"
+    ]
+  },
+  "uid=9fd890fa-7ad6-3b27-5564-b57d87901dd7, ou=members, dc=innov24, dc=io": {
+    "cn": [
+      "ploum@pl"
+    ],
+    "mail": [
+      "ploum@pl"
+    ],
+    "objectclass": [
+      "inetOrgPerson"
+    ],
+    "sn": [
+      "toto"
+    ],
+    "uid": [
+      "9fd890fa-7ad6-3b27-5564-b57d87901dd7"
+    ],
+    "userpassword": [
+      "toto"
+    ]
+  },
+  "uid=58b4e4a2-6dd6-0203-ede5-727271e7702d, ou=members, dc=innov24, dc=io": {
+    "cn": [
+      "rtrt@rtrt"
+    ],
+    "mail": [
+      "rtrt@rtrt"
+    ],
+    "objectclass": [
+      "inetOrgPerson"
+    ],
+    "sn": [
+      "toto"
+    ],
+    "uid": [
+      "58b4e4a2-6dd6-0203-ede5-727271e7702d"
+    ],
+    "userpassword": [
+      "toto"
+    ]
+  }
+}

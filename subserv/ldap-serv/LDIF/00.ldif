@@ -1,0 +1,8 @@
+# create ROOT level branch
+
+dn: dc=innov24,dc=io
+dc: innov24
+o: TCA
+description: A social workspace for journalism and its ecosystem
+objectclass: organization
+objectclass: dcObject

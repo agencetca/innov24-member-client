@@ -1,0 +1,7 @@
+# create MEMBERS level branch
+
+dn: ou=members,dc=innov24,dc=io
+objectclass: organizationalunit
+ou: members
+description: innov24 members
+

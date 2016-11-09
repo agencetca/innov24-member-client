@@ -1,0 +1,37 @@
+{
+  "name": "news",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "assert": "^1.4.1",
+    "body-parser": "^1.15.2",
+    "cli-interact": "^0.1.9",
+    "client-sessions": "^0.7.0",
+    "express": "^4.14.0",
+    "guid": "0.0.12",
+    "http": "0.0.0",
+    "http-proxy": "^1.15.1",
+    "mkdirp": "^0.5.1",
+    "node-ssha256": "^0.1.1",
+    "passport": "^0.3.2",
+    "passport-http": "^0.3.0",
+    "passport-ldapauth": "^0.6.0",
+    "passport-local": "^1.0.0",
+    "pg": "^6.1.0",
+    "querystring": "^0.2.0",
+    "recursive-readdir": "^2.1.0",
+    "request": "^2.75.0",
+    "sleep": "^4.0.0",
+    "socket.io": "^1.4.8",
+    "socket.io-client": "^1.4.8",
+    "socket.io-router": "^0.3.0",
+    "temporal": "^0.5.0"
+  }
+}

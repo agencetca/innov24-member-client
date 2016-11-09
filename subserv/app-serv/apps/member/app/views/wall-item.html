@@ -1,0 +1,15 @@
+<!-- HTML goes below -->
+
+<div class="media well">
+  <div class="media-left">
+    <a href="#">
+      <img class="media-object" src="#" alt="Image">
+    </a>
+  </div>
+  <div class="media-body">
+      <pre><h3 class="media-heading"><strong>{{ $ctrl.title | uppercase }}</strong></h3>
+      <h3 class="media-heading pull-right"><strong>{{ $ctrl.pubdate | date}}</strong></h3>
+      <h3>{{ $ctrl.desc }}</h3>
+      <p ng-bind-html-unsafe="{{ $ctrl.content }}"></p></pre>
+  </div>
+</div>
